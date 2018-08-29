@@ -45,7 +45,8 @@ html, body{
     justify-content: center;
 }
 
-#mainImg{
+.mainImg{
+    margin: 10px 0;
     width: 600px;
     height: 400px;
     background-color: aquamarine;
