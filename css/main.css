@@ -10,16 +10,19 @@ html, body{
 }
 
 #toolBar{
-    width: 100%;
-    height: 50px;
     padding: 0 auto;
     text-align: center;
+}
+
+.menuContents{
+    height: 50px;
     background-color: rgba(0,0,0,0.2);
+    border: 1px solid #ffffff;
 }
 
 .barContents{
     float: left;
-    width: 25%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
