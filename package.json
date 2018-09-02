@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "build": "browserify js/script.js > js/transcript.js"
+  },
+  "name": "yukkihp",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyumaru16/yukkiHP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyumaru16/yukkiHP/issues"
+  },
+  "homepage": "https://github.com/yuyumaru16/yukkiHP#readme",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "npm": "^6.4.1"
+  }
+}
