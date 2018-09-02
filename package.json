@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "browserify js/script.js > js/transcript.js"
+    "build": "browserify js/main.js > js/script.js"
   },
   "name": "yukkihp",
   "version": "1.0.0",
