@@ -2,18 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" type="text/css" href="./css/ripple.css">
         <link rel="stylesheet" type="text/css" href="./css/header.css">
         <link rel="stylesheet" type="text/css" href="./css/humbergerMenu.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/test.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <style>
+            .slideout-menu { left: auto; }
+            .btn-hamburger { left: auto; right: 12px;}
+            .box { height: 1500px; }
+          </style>
         <title>ゆっきーの部屋</title>
     </head>
     <body>
         <div id="main">
             <!--ハンバーガーメニュー-->
-            <div id="header">
-                    <div id="ham-menu">
+            <!--<div id="header">
+                    <button class="hiraku-open-btn" id="offcanvas-right" data-toggle-offcanvas="#js-hiraku-offcanvas-btn">
+                        <span class="hiraku-open-btn-line"></span>
+                    </button>-->
+                    <!--<div id="ham-menu">-->
+                        <!--<div class="offcanvas-right">
                             <ul>
                                 <li>プロフィール？</li>
                                 <li>Schedule</li>
@@ -21,10 +38,65 @@
                                 <li>Contact</li>
                             </ul>
                         </div>
-                        <div id="menu-background"></div>
-            </div>
-            <!--メイン画像-->
-            <div id="headerTitle">てつこの部屋（画像に挿入するタイトル等）</div>
+                       
+            </div>-->
+
+            <nav id="menu" class="menu">
+                <a href="https://github.com/mango/slideout" target="_blank">
+                  <header class="menu-header">
+                    <span class="menu-header-title">Tests</span>
+                  </header>
+                </a>
+          
+                <section class="menu-section">
+                  <h3 class="menu-section-title">Docs</h3>
+                  <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                  </ul>
+                </section>
+          
+                <section class="menu-section">
+                  <h3 class="menu-section-title">Docs</h3>
+                  <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                  </ul>
+                </section>
+          
+                <section class="menu-section">
+                  <h3 class="menu-section-title">Docs</h3>
+                  <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                  </ul>
+                </section>
+          
+                <section class="menu-section">
+                  <h3 class="menu-section-title">Docs</h3>
+                  <ul class="menu-section-list">
+                    <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                    <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                    <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                    <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+                  </ul>
+                </section>
+              </nav>
+
+                <main id="panel" class="panel">
+                        <header class="panel-header">
+                          <button class="btn-hamburger js-slideout-toggle"></button>
+                          <h1 class="title">てつこの部屋（画像に挿入するタイトル等）</h1>
+                        </header>
+                </main>
+            <!--メイン画像
+            <div id="headerTitle">てつこの部屋（画像に挿入するタイトル等）</div>-->
             <div id="mainContents">
                 <!--HPタイトル-->
                 <div class="trimImg"><img src="./src/kawamuraIMGL4515_TP_V.jpg" class="mainImg"></div>
@@ -61,6 +133,26 @@
 
         </div>
         <script type="text/javascript" src="./js/ripple.js"></script>
-
+        <!--ネットから取得したまま-->
+        <script src="./dist/slideout.js"></script>
+        
+        <script>
+            window.onload = function() {
+              var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'side': 'right'
+              });
+      
+              document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+                slideout.toggle();
+              });
+      
+              document.querySelector('.menu').addEventListener('click', function(eve) {
+                if (eve.target.nodeName === 'A') { slideout.close(); }
+              });
+            };
+          </script>
+       
     </body>
 </html>
