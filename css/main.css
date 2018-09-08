@@ -113,3 +113,77 @@ html, body{
     grid-row: 2/3;
     grid-column: 6/7;
 }
+
+#modal-content{
+	width:50%;
+	margin:1.5em auto 0;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff;
+	z-index:2;
+}
+
+.modal-p{
+	margin-top:1em;
+}
+
+.modal-p:first-child{
+	margin-top:0;
+}
+
+.button-link{
+	color:#00f;
+	text-decoration:underline;
+}
+ 
+.button-link:hover{
+	cursor:pointer;
+	color:#f00;
+}
+
+
+/* ここからデモページ用のコード */
+body {
+width: 100% ;
+padding: 0 ;
+}
+/* ここまでデモページ用のコード */
+#modal-content {
+width: 50% ;
+margin: 0 ;
+padding: 10px 20px ;
+border: 2px solid #aaa ;
+background: #fff ;
+position: fixed ;
+display: none ;
+z-index: 2 ;
+}
+#modal-content-innar{
+margin:0 auto;
+width:80%;
+}
+#modal-overlay {
+z-index: 1 ;
+display: none ;
+position: fixed ;
+top: 0 ;
+left: 0 ;
+width: 100% ;
+height: 120% ;
+background-color: rgba( 0,0,0, 0.75 ) ;
+}
+.button-link {
+color: #00f ;
+text-decoration: underline ;
+}
+.button-link:hover {
+cursor: pointer ;
+color: #f00 ;
+}
+.red{
+    color:red;
+    font-weight:bold;
+    font-size:120%;
+    } #side-profile dl {
+    margin-bottom: 10px;
+}
