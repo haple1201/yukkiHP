@@ -42,6 +42,12 @@ html, body{
     grid-column: 1/6;
 }
 
+#calendar iframe {
+    font-family: 'arial black', sans-serif;
+    width: 90% !important;
+    height: 400px !important;
+}
+
 #twitter {
     text-align: center;
     width: 320px; 
@@ -49,14 +55,11 @@ html, body{
     grid-row: 1/2;
     grid-column: 6/8;
 }
-
-.cal-tweet {
-    grid-row: 1/2;
-    grid-column: 1/6;
-    width: 100%;
-    height: auto;
+#twitter-widget-0{
+    width: 600px !important;
+    height: 600px !important;
+    
 }
-
 .snsBtn img{
     border-radius: 30px;
     height: 60px;
@@ -97,6 +100,17 @@ html, body{
 	border:2px solid #aaa;
 	background:#fff;
 	z-index:2;
+}
+
+.subtitle {
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: 'arial black', sans-serif;
 }
 
 .modal-p{
@@ -211,10 +225,17 @@ color: #f00 ;
     }
     #calendar {
         margin: 0 auto;
+        margin-top: 10px; 
         width: 90%;
     }
     #twitter {
         margin: 0 auto;
+        margin-top: 10px;
         width: 90%; 
+    }
+    #twitter-widget-0{
+        width: 90% !important;
+        height: 550px !important;
+        
     }
 }
