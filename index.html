@@ -10,7 +10,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" type="text/css" href="./css/ripple.css">
-        <link rel="stylesheet" type="text/css" href="./css/header.css">
         <link rel="stylesheet" type="text/css" href="./css/humbergerMenu.css">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <link rel="stylesheet" type="text/css" href="./css/test.css">
@@ -24,112 +23,44 @@
     </head>
     <body>
         <div id="main">
-            <!--ハンバーガーメニュー-->
-            <!--<div id="header">
-                    <button class="hiraku-open-btn" id="offcanvas-right" data-toggle-offcanvas="#js-hiraku-offcanvas-btn">
-                        <span class="hiraku-open-btn-line"></span>
-                    </button>-->
-                    <!--<div id="ham-menu">-->
-                        <!--<div class="offcanvas-right">
-                            <ul>
-                                <li>プロフィール？</li>
-                                <li>Schedule</li>
-                                <li>Blog</li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
-                       
-            </div>-->
-
             <nav id="menu" class="menu">
-
                 <section class="menu-section">
                   <ul class="menu-section-list">
-                    <li>
-                        <a id="modal-open" class="button-link">プロフィール</a>
-                    </li>
-                    <li>Schedule</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a id="modal-open" class="button-link">プロフィール</a></li>
+                    <li><a id="modal-open" class="button-link">Schedule</a></li>
+                    <li><a id="modal-open" class="button-link">Blog</a></li>
+                    <li><a id="modal-open" class="button-link">Contact</a></li>
                   </ul>
                 </section>
-          
-              </nav>
-              
-              
-                <main id="panel" class="panel">
-                        <header class="panel-header">
-                          <button class="btn-hamburger js-slideout-toggle"></button>
-                          <h1>てつこの部屋（画像に挿入するタイトル等）</h1>
-                        </header>
-                </main>
-            <!--メイン画像
-            <div id="headerTitle">てつこの部屋（画像に挿入するタイトル等）</div>-->
+            </nav>
+            <!--パネル-->
+            <main id="panel" class="panel">
+                <header class="panel-header">
+                    <button class="btn-hamburger js-slideout-toggle"></button>
+                    <h1>てつこの部屋（画像に挿入するタイトル等）</h1>
+                </header>
+            </main>
+            <!--メイン画像-->
             <div id="mainContents">
                 <!--HPタイトル-->
-                <div class="trimImg"><img src="./src/kawamuraIMGL4515_TP_V.jpg" class="mainImg"></div>
+                <div class="trimImg">
+                    <img src="./src/kawamuraIMGL4515_TP_V.jpg" class="mainImg">
+                </div>
             </div>
-            
-              <!-- モーダルウィンドウのコンテンツ開始 -->
-  
-  <div id="modal-content" style="left: 438px; top: 109px; display: none;">
-    <div id="modal-content-innar">
-      <p class="red bold"><strong>プロフィール</strong></p>
-      <table>
-        <table>
-            <tr>
-                <td>
-                    ｛写真｝
-                </td>
-                <th>
-                    澤崎 柚希
-                 </tr>
-            </th>
-            <tr>
-                <td>
-                    ニックネーム
-                </td>
-                <th>
-                    ゆっきー
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    ニックネーム
-                </td>
-                <th>
-                    ペンギン
-                </th>
-            </tr>
-            <tr>
-                <td>
-                   ニックネーム
-                </td>
-                <th>
-                    ペンギン
-                </th>
-            </tr>
-        </table>
-      <p><a id="modal-close" class="button-link">閉じる</a></p>
-      <p></p>
-    </div>
-  </div>
-  <!-- モーダルウィンドウのコンテンツ終了 -->
-        <script type="text/javascript" src="./js/ripple.js"></script>
+
+            <!-- モーダルウィンドウのコンテンツ終了 -->
+            <script type="text/javascript" src="./js/ripple.js"></script>
             <!--グリッドレイアウト-->
             <div class="wrapperGrid">
                 <!--カレンダー-->
                 <div id="calendar">
-                        <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff6666&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>                <!--Twitter-->
+                    <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff9966&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border:solid 1px #777"  frameborder="0" scrolling="no"></iframe>
+                    <!-- <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff6666&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
                 </div>
+                <!--Twitter-->
                 <div id="twitter">
-                    <a class="twitter-timeline" 
-                    width= "320px" 
-                    height= "600px"
-                    data-border-color="#ffb6c1"
-                    data-link-color="#ffb6c1"
-                    data-chrome="noheader nofooter noscrollbar"
-                    href="https://twitter.com/yukkyfadeout?ref_src=twsrc%5Etfw">Tweets by yukkyfadeout</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a class="twitter-timeline" href="https://twitter.com/yukkyfadeout?ref_src=twsrc%5Etfw">Tweets by yukkyfadeout</a> 
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
                 <!--Twitter-->
                 <div id="twitterIcon" class="snsBtn">
@@ -143,31 +74,41 @@
                 <div id="voicyIcon" class="snsBtn">
                     <img src = "https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg">
                 </div>
+                <div id="footer">Copylight Ⓒ sawasaki yuki All Right Reserved.</div>
             </div>
-
-  </div>
+        </div>
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <div id="modal-content" style="left: 438px; top: 109px; display: none;">
+            <div id="modal-content-innar">
+                <p class="red bold"><strong>プロフィール</strong></p>
+                <table>
+                    <tr><td>写真</td><th>澤崎 柚希</th></tr>
+                    <tr><td>ニックネーム</td><th>ゆっきー</th></tr>
+                    <tr><td>ニックネーム</td><th>ペンギン</th></tr>
+                    <tr><td>ニックネーム</td><th>ペンギン</th></tr>
+                </table>
+                <div id="modal-close"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
+            </div>
+        </div>
         <script type="text/javascript" src="./js/main.js"></script>
         <script type="text/javascript" src="./js/ripple.js"></script>
         <!--ネットから取得したまま-->
         <script src="./js/slideout.js"></script>
-        
         <script>
             window.onload = function() {
-              var slideout = new Slideout({
+            var slideout = new Slideout({
                 'panel': document.getElementById('panel'),
                 'menu': document.getElementById('menu'),
                 'side': 'right'
-              });
-      
-              document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+            });
+            document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
                 slideout.toggle();
-              });
-      
-              document.querySelector('.menu').addEventListener('click', function(eve) {
+            });
+            document.querySelector('.menu').addEventListener('click', function(eve) {
                 if (eve.target.nodeName === 'A') { slideout.close(); }
-              });
+            });
             };
-          </script>
-       
+        </script>
+        
     </body>
 </html>
