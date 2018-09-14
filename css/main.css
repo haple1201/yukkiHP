@@ -65,7 +65,13 @@ html, body{
     height: 60px;
     width: 60px;
 }
-
+.SNScard {
+    float: left;
+    width: 160px;
+    height: 80px;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
+}
 #twitterIcon {
     display: flex;
     text-align: center;
@@ -190,7 +196,9 @@ color: #f00 ;
     height: 25px;
   }
 
+
 #footer {
+    /* margin-bottom: 0; */
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -235,7 +243,15 @@ color: #f00 ;
     }
     #twitter-widget-0{
         width: 90% !important;
-        height: 550px !important;
+        height: 500px !important;
         
+    }
+    .SNScard {
+        margin: 0 auto;
+        margin: 10px;
+        width: 90%;
+        height: 80px;
+        box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,0.2);
     }
 }
