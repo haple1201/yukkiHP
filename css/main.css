@@ -78,6 +78,7 @@ html, body{
     width: 100%;
     height: 55%;
     border-radius: 15px;
+    margin: 5px auto 30px auto;
     background-color: #ffb6c1;
     border: solid 1px;
 }
@@ -108,17 +109,16 @@ width:100%;
 }
 
 .snsBtn img{
-    margin-top: 10px;
     margin-left: 10px;
     border-radius: 30px;
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
 }
 
 .SNSText {       
-    margin-top: 10px;
     font-weight: 900;
     font-size: 36px;
+    margin-left: 10px;
     text-align: center;
     align-items: center;
     vertical-align: middle;
@@ -304,15 +304,16 @@ color: #f00 ;
     }
 
     .snsBtn img{
+        margin-top: 10px;
         float: left;
         border-radius: 30px;
         height: 60px;
         width: 60px;
     }
     .SNSText {
+        margin-top: 10px;
         float: left;     
         margin-top: 25px;
-        margin-left: 10px;
         text-align: center;
         /* vertical-align: middle; */
     }
