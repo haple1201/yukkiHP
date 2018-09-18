@@ -45,7 +45,7 @@ html, body{
 #calendar iframe {
     font-family: 'arial black', sans-serif;
     width: 90% !important;
-    height: 400px !important;
+    height: 600px !important;
 }
 
 #twitter {
@@ -74,14 +74,56 @@ html, body{
     width: 60px;
 }
 .SNScard {
-    width: 160px;
-    height: 80px;
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
-    background-color: rgba(0,0,0,0.2);
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    background-color: #ffb6c1;
+    border: solid 1px;
 }
-.SNScard :hover{
+/* .SNScard :hover{
     background-color: blue;
+} */
+#twitterCard {
+    border-color: #00acee;
 }
+
+#showroomCard {
+    border-left:1px solid #ff0000;
+    border-right:1px solid #0000ff;
+}
+
+#showroomCard:before,
+#showroomCard:after {
+content:"";
+display:block;
+width:100%;
+	background:-webkit-gradient(linear, left top, right bottom, from(#f00), to(#00f));
+	background:-moz-linear-gradient(left, #f00, #00f);
+	background:linear-gradient(left, #f00, #00f);
+}
+
+#voicyCard {
+    border-color: #f47224;
+}
+
+.snsBtn img{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+}
+
+.SNSText {       
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
 #twitterIcon {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -111,6 +153,7 @@ html, body{
     height: auto;
     margin: 0 5%;
     text-align: left;
+    border-radius: 2px;
     background-color: #ffffff;
     font-size: 20px;
     font-family: 'arial black', sans-serif;
@@ -249,8 +292,7 @@ color: #f00 ;
         margin: 5px auto 30px auto;
         width: 90%;
         height: 80px;
-        box-shadow: 2px 4px 10px rgba(0,0,0,0.4);
-        background-color: #ffffff;
+        border: solid 1px;
     }
 
     .snsBtn{
@@ -264,11 +306,14 @@ color: #f00 ;
     .snsBtn img{
         float: left;
         border-radius: 30px;
-        height: 45px;
-        width: 45px;
+        height: 60px;
+        width: 60px;
     }
     .SNSText {
+        float: left;     
+        margin-top: 25px;
+        margin-left: 10px;
         text-align: center;
-        vertical-align: middle;
+        /* vertical-align: middle; */
     }
 }
