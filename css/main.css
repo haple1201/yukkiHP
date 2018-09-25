@@ -164,12 +164,17 @@ width:100%;
 .subtitle {
     width: 90%;
     height: auto;
-    margin: 0 5%;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
     border-radius: 2px;
     background-color: #ffffff;
     font-size: 20px;
     font-family: 'arial black', sans-serif;
+}
+
+#titletwitter{
+    padding: 0 5%;
 }
 
 .modal-p{
@@ -324,10 +329,12 @@ color: #f00 ;
         width: 60px;
     }
     .SNSText {
-        margin-top: 10px;
         float: left;     
         margin-top: 25px;
         text-align: center;
         /* vertical-align: middle; */
+    }
+    #titletwitter{
+        padding: 0;
     }
 }
