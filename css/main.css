@@ -9,6 +9,12 @@ html, body{
     background-color: #ffb6c1;
 }
 
+#titleStyle {
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+}
+
 .menuContents{
     height: 50px;
     background-color: rgba(0,0,0,0.2);
@@ -82,14 +88,21 @@ html, body{
     background-color: #ffb6c1;
     border: solid 1px;
 }
-/* .SNScard :hover{
-    background-color: blue;
-} */
+
+.SNScard a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    direction: none;
+}
+
+
 #twitterCard {
     border-color: #00acee;
 }
 
 #showroomCard {
+    color: #000000;
     border-left:1px solid #ff0000;
     border-right:1px solid #0000ff;
 }

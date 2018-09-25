@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja"> 
     <head>
         <meta charset="UTF-8">
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="cleartype" content="on">
         <meta name="MobileOptimized" content="320">
@@ -28,8 +27,8 @@
                   <ul class="menu-section-list">
                     <li><a id="modal-open" class="button-link">プロフィール</a></li>
                     <li><a id="modal-open" class="button-link">Schedule</a></li>
-                    <li><a id="modal-open" class="button-link">Blog</a></li>
-                    <li><a id="modal-open" class="button-link">Contact</a></li>
+                    <li><a href="https://ameblo.jp/yuzuki0716sawazaki/" class="button-link">Blog</a></li>
+                    <li><a href="./pages/contact.html" class="button-link">Contact</a></li>
                   </ul>
                 </section>
             </nav>
@@ -37,7 +36,10 @@
             <main id="panel" class="panel">
                 <header class="panel-header">
                     <button class="btn-hamburger js-slideout-toggle"></button>
-                    <h1>てつこの部屋（画像に挿入するタイトル等）</h1>
+                    <div id="titleStyle">
+                        <h1>ゆっきーの部屋</h1>
+                        <h2>～澤崎 柚希～</h2>
+                    </div>
                 </header>
             </main>
             <!--メイン画像-->
@@ -68,26 +70,33 @@
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
                 <!--Twitter-->
-                <div id="twitterCard" class="SNScard ripple">
-                    <div id="twitterIcon" class="snsBtn">
-                        <img src="./src/11367695-large.jpg" class="SNSImg">
-                        <div class="SNSText">Twitter</div>
+                    <div id="twitterCard" class="SNScard ripple">
+                        <div id="twitterIcon" class="snsBtn">
+                                <a href="https://twitter.com/yukkyfadeout">
+                                    <img src="./src/11367695-large.jpg" class="SNSImg">
+                            <div class="SNSText">Twitter</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
+
                 <!--ショールーム-->
-                <div id="showroomCard" class="SNScard ripple">
-                    <div id="showroomIcon" class="snsBtn">
-                        <img src="./src/1024.png" class="SNSImg">
-                        <div class="SNSText">ShowRoom</div>
+                    <div id="showroomCard" class="SNScard ripple">
+                        <div id="showroomIcon" class="snsBtn">
+                            <a href="#">
+                                <img src="./src/1024.png" class="SNSImg">
+                                <div class="SNSText">ShowRoom</div>
+                            </a>
+                        </div>
                     </div>
-                </div>
                 <!--ボイシー-->
-                <div id="voicyCard" class="SNScard ripple">
-                    <div id="voicyIcon" class="snsBtn">
-                        <img src = "https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg" class="SNSImg">
-                        <div class="SNSText">Voicy</div>
+                    <div id="voicyCard" class="SNScard ripple">
+                        <div id="voicyIcon" class="snsBtn">
+                                <a href="#"> 
+                                        <img src = "https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg" class="SNSImg">
+                            <div class="SNSText">Voicy</div>
+                        </a>
                     </div>
-                </div>
+                    </div>
             </div>
             <div id="footer">Copylight Ⓒ sawasaki yuki All Right Reserved.</div>
         </div>
