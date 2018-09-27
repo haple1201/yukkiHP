@@ -107,6 +107,7 @@ a {
   position: absolute;
   top: 12px;
   left: 12px;
+  padding-bottom: 12px;
   outline:none;
   background: url('../src/menu.png') no-repeat center;
   width: 50px;
