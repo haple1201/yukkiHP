@@ -21,8 +21,13 @@ html, body{
     border: 1px solid #ffffff;
 }
 
+#title{
+    font-size:30px;
+}
+
 #mainContents{
-    width: 100%;
+    margin: 50px auto;
+    width: 90%;
     height: auto;
     display: flex;
     align-items: center;
@@ -30,10 +35,13 @@ html, body{
 }
 
 #mainImgBox{
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    width: 600px;
+    height: 300px;
     position: relative;
 }
+
 #mainImgBox p{
     position: absolute;
     font-size: 3em;
@@ -297,13 +305,13 @@ color: #f00 ;
     }
     #mainContents{
         margin: 15px 0;
-        width: 100%;
-        height: auto;
+        /* width: 100%;
+        height: auto; */
         text-align: center;
     }
     .mainImg{
-        width: 90%;
-        height: auto;
+        /* width: 90%;
+        height: auto; */
         text-align: center;
     }    
     .wrapperGrid {
