@@ -180,7 +180,7 @@ width:100%;
     grid-column: 6/7;
 }
 
-#modal-content{
+#modal-content,#modal-content2{
 	width:50%;
 	margin:1.5em auto 0;
 	padding:10px 20px;
@@ -205,7 +205,7 @@ width:100%;
     padding: 0 5%;
 }
 
-.modal-p{
+.modal-p, .modal-p2{
 	margin-top:1em;
 }
 
@@ -230,7 +230,7 @@ width: 100% ;
 padding: 0 ;
 }
 /* ここまでデモページ用のコード */
-#modal-content {
+#modal-content, #modal-content2{
 width: 50% ;
 margin: 0 ;
 padding: 10px 20px ;
@@ -240,11 +240,11 @@ position: fixed ;
 display: none ;
 z-index: 2 ;
 }
-#modal-content-innar{
+#modal-content-innar, #modal-content-innar2{
 margin:0 auto;
 width:80%;
 }
-#modal-overlay {
+#modal-overlay, #modal-overlay2 {
 z-index: 1 ;
 display: none ;
 position: fixed ;
@@ -269,7 +269,7 @@ color: #f00 ;
     } #side-profile dl {
     margin-bottom: 10px;
 }
-#modal-close{
+#modal-close, #modal-close2{
     margin: 0 auto;
     margin-top: 5px; 
     width: 30px;
@@ -277,7 +277,7 @@ color: #f00 ;
     text-align: center;
     align-items: center;
 }
-#closeIcon {
+#closeIcon,  #closeIcon2{
     width: 25px;
     height: 25px;
   }
