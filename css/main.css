@@ -310,7 +310,7 @@ color: #f00 ;
         text-align: center;
     }    
     .wrapperGrid {
-        display: block;
+        display: inline-block;
     }
     #calendar {
         margin: 0 auto;
@@ -334,11 +334,14 @@ color: #f00 ;
     }
 
     .snsBtn {
-
+        width: 20%;
+        display: block;
     }
 
     .snsBtn img{
-        float: left;
+        margin: 15px;
+
+
         border-radius: 50px;
         height: 50px;
         width: 50px;
@@ -346,6 +349,8 @@ color: #f00 ;
 
     .SNScard a{
         display: block;
+        height: 50px;
+        width: 50px;
         text-decoration: none;
         direction: none;
     }
@@ -356,4 +361,19 @@ color: #f00 ;
         vertical-align: middle;
     }
 
+    #lineIcon{
+        margin: 5px;
+    }
+    #twitterIcon{
+        margin: 5px;
+    }
+    #showroomIcon{
+        margin: 5px;
+    }
+    #voicyIcon{
+        margin: 5px;
+    }
+    #amazonIcon{
+        margin: 5px;
+    }
 }
