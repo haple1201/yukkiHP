@@ -60,7 +60,7 @@ html, body{
     black 2px -1px, black -2px -1px;
 }
 .mainImg{
-    width: 100%;
+    max-width: 80%;
     height: auto;
 }
 

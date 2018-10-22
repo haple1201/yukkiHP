@@ -1,166 +1,220 @@
 <!DOCTYPE html>
-<html lang="ja"> 
-   <head>
-       <!-- Google Tag Manager -->
-       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-       })(window,document,'script','dataLayer','GTM-PGTQP6D');</script>
-       <!-- End Google Tag Manager -->
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta http-equiv="cleartype" content="on">
-       <meta name="MobileOptimized" content="320">
-       <meta name="HandheldFriendly" content="True">
-       <meta name="apple-mobile-web-app-capable" content="yes">
-       <link rel="stylesheet" type="text/css" href="./css/main.css">
-       <link rel="stylesheet" type="text/css" href="./css/ripple.css">
-       <link rel="stylesheet" type="text/css" href="./css/humbergerMenu.css">
-       <link rel="stylesheet" type="text/css" href="./css/index.css">
-       <link rel="stylesheet" type="text/css" href="./css/test.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-       <style>
-           .slideout-menu { left: auto; }
+<html lang="ja">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGTQP6D');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/ripple.css">
+    <link rel="stylesheet" type="text/css" href="./css/humbergerMenu.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/test.css">
+    <link rel="stylesheet" href="./dist/css/swiper.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <style>
+        .slideout-menu { left: auto; }
            .btn-hamburger { left: auto; right: 12px;}
            .box { height: 1500px; }
          </style>
-       <title>ゆっきーの部屋</title>
-   </head>
-   <body>
-       <!-- Google Tag Manager (noscript) -->
-       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGTQP6D"
-       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-       <!-- End Google Tag Manager (noscript) -->
-       </div>
-       <div id="main">
-           <nav id="menu" class="menu">
-               <section class="menu-section">
-                 <ul class="menu-section-list">
-                   <li><a id="modal-open" class="button-link">profile</a></li>
-                   <li><a id="modal-open2" class="button-link">Schedule</a></li>
-                   <li><a href="http://www.idocuration.com/" class="button-link">idocuration</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSft5U46yBYAmRFvub5R-pxXr_DwcGshUqjP9kugopSDfvzp3g/viewform?usp=sf_link" class="button-link">Contact</a></li>
-                  </ul>
-                </section>
-            </nav>
-            <!--パネル-->
-            <main id="panel" class="panel">
-                <header class="panel-header">
-                    <button class="btn-hamburger js-slideout-toggle"></button>
-                    <div id="title">ゆっきーの部屋</div>
-                    <!--メイン画像-->
-                    <div id="mainContents">
-                        <!--HPタイトル-->
-                            <img src="./src/Di_kJSsVAAAPfze.jpg" class="mainImg">
-                    </div>
-                </header>
-            </main>
+    <title>ゆっきーの部屋</title>
+</head>
 
-            <!-- <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGTQP6D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    </div>
+    <div id="main">
+        <nav id="menu" class="menu">
+            <section class="menu-section">
+                <ul class="menu-section-list">
+                    <li><a id="modal-open" class="button-link">profile</a></li>
+                    <li><a id="modal-open2" class="button-link">Schedule</a></li>
+                    <li><a href="http://www.idocuration.com/" class="button-link">idocuration</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSft5U46yBYAmRFvub5R-pxXr_DwcGshUqjP9kugopSDfvzp3g/viewform?usp=sf_link"
+                            class="button-link">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <!--パネル-->
+        <main id="panel" class="panel">
+            <header class="panel-header">
+                <button class="btn-hamburger js-slideout-toggle"></button>
+                <div id="title">ゆっきーの部屋</div>
+                <!--メイン画像-->
+                <!--HPタイトル-->
 
-
-
-            
-            <!--グリッドレイアウト-->
-            <div class="wrapperGrid">
-                <!--カレンダー-->
-                <div id="calendar">
-                    <div class="subtitle">event schedule</div>
-                    <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
-                    <!-- <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff6666&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+            </header>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./src/Di_kJSsVAAAPfze.jpg" class="mainImg"></div>
+                    <div class="swiper-slide"><img src="./src/11367695-large.jpg" class="mainImg"></div>
+                    <div class="swiper-slide"><img src="./src/15.jpg" class="mainImg"></div>
                 </div>
-                <!--Twitter-->
-                <div id="twitter">
-                    <div id="titletwitter" class="subtitle">twitter account</div>
-                    <a class="twitter-timeline" 
-                    width="0"
-                    height="0"
-                    data-chrome="noheader nofooter"
-                    href="https://twitter.com/yukkyfadeout?ref_src=twsrc%5Etfw">Tweets by yukkyfadeout</a> 
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <!--LINE-->
-                <a href="https://stampsensei.com/stamp/31516" id="lineCard" class="SNScard">
-                    <div id="lineIcon" class="snsBtn ripple">
-                        <img src="./src/Line.png" class="SNSImg">
-                    </div>
-                </a>
-                <!--Twitter-->
-                <a href="https://twitter.com/yukkyfadeout" id="twitterCard" class="SNScard ripple">
-                    <div id="twitterIcon" class="snsBtn">
-                        <img src="./src/11367695-large.jpg" class="SNSImg">
-                    </div>
-                </a>
-                <!--ショールーム-->
-                <a href="https://www.showroom-live.com/sawazakiyuzuki" id="showroomCard" class="SNScard">
-                    <div id="showroomIcon" class="snsBtn ripple">
-                        <img src="./src/1024.png" class="SNSImg">                           
-                    </div>
-                </a>
-                <!--ボイシー-->
-                <a href="https://voicy.jp/channel/475" id="voicyCard" class="SNScard ripple"> 
-                    <div id="voicyIcon" class="snsBtn">
-                        <img src = "https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg" class="SNSImg">
-                    </div>
-                </a>
-                <!--amazon-->
-                <a href="https://www.amazon.co.jp/dp/B07CJGYRZP/ref=cm_sw_r_oth_api_FPaXBbH9X6E7T" id="amazonCard" class="SNScard ripple">
-                    <div id="amazonIcon" class="snsBtn">
-                        <img src="./src/amazon.png" class="SNSImg">
-                    </div>
-                </a>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div id="footer">Copylight Ⓒ sawasaki yuki All Right Reserved.</div>
-        </div>
-        <!-- モーダルウィンドウのコンテンツ開始 -->
-        <div id="modal-content" style="left: 438px; top: 109px; display: none;">
-            <div id="modal-content-innar">
-                <p class="red bold"><strong>プロフィール</strong></p>
-                    <table>
-                        <tr><td>名前</td><th>澤崎 柚希</th></tr>
-                        <tr><td>愛称</td><th>ゆっきー<br>ペンギン</th></tr>
-                        <tr><td>誕生日</td><th>11××年7月16日</th></tr>
-                        <tr><td>職業</td><th>OL<br>アイドル<br>声優</th></tr>
-                        <tr><td>出身</td><th>広島</th></tr>
-                        <tr><td>現在地</td><th>あなたの中</th></tr>
-                        <tr><td>趣味</td><th>喋る<br>寝る<br>食べる<br>泳ぐ</th></tr>
-                        <tr><td>好き</td><th>太くて硬いパスタ<br>サカナ<br>カープ<br>イケメン</th></tr>
-                    </table>                
-                <div id="modal-close"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
-            </div>
-        </div>
-        <!-- モーダルウィンドウのコンテンツ終了 -->
-        <!-- モーダルウィンドウのコンテンツ開始 -->
-        <div id="modal-content2" style="left: 438px; top: 109px; display: none;">
-            <div id="modal-content-innar2">
-                <p class="red bold"><strong>スケジュール</strong></p>
-                <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                <div id="modal-close2"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
-            </div>
-        </div>
-        <!-- モーダルウィンドウのコンテンツ終了 -->
-        <script type="text/javascript" src="./js/main.js"></script>
-        <script type="text/javascript" src="./js/ripple.js"></script>
-        <!--ネットから取得したまま-->
-        <script src="./js/slideout.js"></script>
+        </main>
 
-        <script>
-            window.onload = function() {
+        <!-- <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+
+
+
+        <!--グリッドレイアウト-->
+        <div class="wrapperGrid">
+            <!--カレンダー-->
+            <div id="calendar">
+                <div class="subtitle">event schedule</div>
+                <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo"
+                    style="border-width:0" frameborder="0" scrolling="no"></iframe>
+                <!-- <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff6666&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+            </div>
+            <!--Twitter-->
+            <div id="twitter">
+                <div id="titletwitter" class="subtitle">twitter account</div>
+                <a class="twitter-timeline" width="0" height="0" data-chrome="noheader nofooter" href="https://twitter.com/yukkyfadeout?ref_src=twsrc%5Etfw">Tweets
+                    by yukkyfadeout</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <!--LINE-->
+            <a href="https://stampsensei.com/stamp/31516" id="lineCard" class="SNScard">
+                <div id="lineIcon" class="snsBtn ripple">
+                    <img src="./src/Line.png" class="SNSImg">
+                </div>
+            </a>
+            <!--Twitter-->
+            <a href="https://twitter.com/yukkyfadeout" id="twitterCard" class="SNScard ripple">
+                <div id="twitterIcon" class="snsBtn">
+                    <img src="./src/11367695-large.jpg" class="SNSImg">
+                </div>
+            </a>
+            <!--ショールーム-->
+            <a href="https://www.showroom-live.com/sawazakiyuzuki" id="showroomCard" class="SNScard">
+                <div id="showroomIcon" class="snsBtn ripple">
+                    <img src="./src/1024.png" class="SNSImg">
+                </div>
+            </a>
+            <!--ボイシー-->
+            <a href="https://voicy.jp/channel/475" id="voicyCard" class="SNScard ripple">
+                <div id="voicyIcon" class="snsBtn">
+                    <img src="https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg"
+                        class="SNSImg">
+                </div>
+            </a>
+            <!--amazon-->
+            <a href="https://www.amazon.co.jp/dp/B07CJGYRZP/ref=cm_sw_r_oth_api_FPaXBbH9X6E7T" id="amazonCard" class="SNScard ripple">
+                <div id="amazonIcon" class="snsBtn">
+                    <img src="./src/amazon.png" class="SNSImg">
+                </div>
+            </a>
+        </div>
+        <div id="footer">Copylight Ⓒ sawasaki yuki All Right Reserved.</div>
+    </div>
+    <!-- モーダルウィンドウのコンテンツ開始 -->
+    <div id="modal-content" style="left: 438px; top: 109px; display: none;">
+        <div id="modal-content-innar">
+            <p class="red bold"><strong>プロフィール</strong></p>
+            <table>
+                <tr>
+                    <td>名前</td>
+                    <th>澤崎 柚希</th>
+                </tr>
+                <tr>
+                    <td>愛称</td>
+                    <th>ゆっきー<br>ペンギン</th>
+                </tr>
+                <tr>
+                    <td>誕生日</td>
+                    <th>11××年7月16日</th>
+                </tr>
+                <tr>
+                    <td>職業</td>
+                    <th>OL<br>アイドル<br>声優</th>
+                </tr>
+                <tr>
+                    <td>出身</td>
+                    <th>広島</th>
+                </tr>
+                <tr>
+                    <td>現在地</td>
+                    <th>あなたの中</th>
+                </tr>
+                <tr>
+                    <td>趣味</td>
+                    <th>喋る<br>寝る<br>食べる<br>泳ぐ</th>
+                </tr>
+                <tr>
+                    <td>好き</td>
+                    <th>太くて硬いパスタ<br>サカナ<br>カープ<br>イケメン</th>
+                </tr>
+            </table>
+            <div id="modal-close"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
+        </div>
+    </div>
+    <!-- モーダルウィンドウのコンテンツ終了 -->
+    <!-- モーダルウィンドウのコンテンツ開始 -->
+    <div id="modal-content2" style="left: 438px; top: 109px; display: none;">
+        <div id="modal-content-innar2">
+            <p class="red bold"><strong>スケジュール</strong></p>
+            <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo"
+                style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <div id="modal-close2"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
+        </div>
+    </div>
+    <!-- モーダルウィンドウのコンテンツ終了 -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/ripple.js"></script>
+    <!--ネットから取得したまま-->
+    <script src="./js/slideout.js"></script>
+
+    <script>
+        window.onload = function () {
             var slideout = new Slideout({
                 'panel': document.getElementById('panel'),
                 'menu': document.getElementById('menu'),
                 'side': 'right'
             });
-            document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+            document.querySelector('.js-slideout-toggle').addEventListener('click', function () {
                 slideout.toggle();
             });
-            document.querySelector('.menu').addEventListener('click', function(eve) {
+            document.querySelector('.menu').addEventListener('click', function (eve) {
                 if (eve.target.nodeName === 'A') { slideout.close(); }
             });
-            };
-        </script>
-        
-    </body>
+        };
+
+    </script>
+    <script type="text/javascript" src="./dist/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
 </html>
