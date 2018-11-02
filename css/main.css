@@ -6,7 +6,7 @@ html, body{
 #main{
     width: 100%;
     height: auto;
-    background-color: #ffb6c1;
+
 }
 
 #titleStyle {
@@ -64,6 +64,31 @@ html, body{
     height: auto;
 }
 
+.mainImgContainer{
+    width: 600px;
+    height: 300px;
+}
+
+.mainImg1{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.mainImg2{
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+.mainImg3{
+    width: 100%;
+    height: auto;
+    z-index: 4;
+}
+.mainImg4{
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
 .wrapperGrid {
     display: grid;
     grid-template-rows: 680px 200px;
@@ -330,29 +355,46 @@ color: #f00 ;
 
     .SNScard {
         border-radius: 15px;
-        background-color: #ffb6c1;
+        background-color: #aabbcc;
     }
 
     .snsBtn {
         width: 20%;
-        display: block;
+        display: flex;
     }
 
     .snsBtn img{
         margin: 15px;
-
-
         border-radius: 50px;
         height: 50px;
         width: 50px;
     }
 
     .SNScard a{
-        display: block;
+        display: flex;
         height: 50px;
         width: 50px;
         text-decoration: none;
         direction: none;
+    }
+    #lineCard {
+        background-color: #aabbcc;
+    }
+    
+    #twitterCard {
+        background-color: #aabbcc;
+    }
+    
+    #showroomCard {
+        background-color: #aabbcc;
+    }
+    
+    #voicyCard {
+        background-color: #aabbcc;
+    }
+    
+    #amazonCard {
+        background-color: #aabbcc;
     }
 
     #titletwitter{
