@@ -4,13 +4,30 @@ html, body{
 
 }
 
-#main{
+.background {
+    background-color: #ffb6c1;
+    opacity: 0.5;
+    filter: blur(8px);
+}
+
+.main{
     width: 100%;
     height: auto;
-  background: #fff;
-  background-image: linear-gradient(90deg, rgba(88, 255, 0, 0.6) 50%, transparent 50%),
-  linear-gradient(rgb(255, 0, 0) 50%, transparent 50%);
-  background-size: 50px 50px;
+    background-image: url('./../src/back.jpeg');
+    position: relative;
+    z-index: 0;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
 }
 
 #titleStyle {
@@ -135,7 +152,6 @@ html, body{
     height: 55%;
     border-radius: 15px;
     margin: 5px auto 30px auto;
-    background-color: #ffb6c1;
 }
 
 .SNScard a{
@@ -145,15 +161,11 @@ html, body{
     direction: none;
 }
 
-
 #showroomCard:before,
 #showroomCard:after {
 content:"";
 display:block;
 width:100%;
-	background:-webkit-gradient(linear, left top, right bottom, from(#f00), to(#00f));
-	background:-moz-linear-gradient(left, #f00, #00f);
-	background:linear-gradient(left, #f00, #00f);
 }
 
 #voicyCard {
@@ -199,7 +211,7 @@ width:100%;
 	padding:10px 20px;
 	border:2px solid #aaa;
 	background:#fff;
-	z-index:2;
+	z-index: 3;
 }
 
 .subtitle {
@@ -252,11 +264,10 @@ background: #fff ;
 position: fixed ;
 display: none ;
 z-index: 2 ;
-background: linear-gradient(-70deg, #EF3B85, #ffffff)
 }
 #modal-content2{
     width: 70% ;
-    height: 80%;
+    height: 85%;
     margin: 0 ;
     padding: 10px 20px ;
     border: 2px solid #aaa ;
@@ -352,16 +363,19 @@ color: #f00 ;
         margin: 0;
         padding: 0;
     }
-    #main{
+    .main{
         width: 100%;
         height: auto;
-        background-color: #ffb6c1;
     }
     #mainContents{
         margin: 15px 0;
         /* width: 100%;
         height: auto; */
         text-align: center;
+    }
+    .mainContainer {
+        width: 100%;
+        margin: auto;
     }
     .mainImg{
         /* width: 90%;
@@ -387,53 +401,10 @@ color: #f00 ;
         
     }
 
-    .SNScard {
-        border-radius: 15px;
-        background-color: #ffb6c1;
-    }
-
-    .snsBtn {
-        width: 20%;
-        display: block;
-    }
-
-    .snsBtn img{
-        margin: 15px;
-
-
-        border-radius: 50px;
-        height: 50px;
-        width: 50px;
-    }
-
-    .SNScard a{
-        display: block;
-        height: 50px;
-        width: 50px;
-        text-decoration: none;
-        direction: none;
-    }
-
     #titletwitter{
         padding: 0 2px;
         display:inline-block;
         vertical-align: middle;
-    }
-
-    #lineIcon{
-        margin: 5px;
-    }
-    #twitterIcon{
-        margin: 5px;
-    }
-    #showroomIcon{
-        margin: 5px;
-    }
-    #voicyIcon{
-        margin: 5px;
-    }
-    #amazonIcon{
-        margin: 5px;
     }
 
     #modal-content{
@@ -460,5 +431,19 @@ color: #f00 ;
     #modal-content-innar, #modal-content-innar2{
         margin:0 auto;
         width: 100%;
+    }
+
+    .snsBtn {
+        width: auto;
+        height: auto;
+    }
+
+    .SNScard {
+        width: auto;
+        height: auto;
+    }
+
+    .iconContainer {
+        display: flex;
     }
 }

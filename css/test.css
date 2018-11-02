@@ -10,9 +10,8 @@ body {
 
 body,
 .panel {
-  background: #fff;
-  background-image: linear-gradient(90deg, rgba(88, 255, 0, 0.6) 50%, transparent 50%),
-  linear-gradient(rgb(255, 0, 0) 50%, transparent 50%);
+  background: #fff;    
+  background-image: url('./../src/back.jpeg');
   background-size: 50px 50px;
 }
 
@@ -112,7 +111,7 @@ a {
   left: 12px;
   padding-bottom: 12px;
   outline:none;
-  background: url('../src/menu.png') no-repeat center;
+  background: url('../src/menu2.png') no-repeat center;
   width: 50px;
   height: 50px;
 }
