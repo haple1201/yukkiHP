@@ -10,9 +10,21 @@ body {
 
 body,
 .panel {
-  background: #fff;    
   background-image: url('./../src/back.jpeg');
-  background-size: 50px 50px;
+  position: relative;
+  z-index: 0;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .menu {
