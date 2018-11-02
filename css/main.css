@@ -269,6 +269,7 @@ cursor: pointer ;
 color: #f00 ;
 }
 .red{
+    text-align: center;
     color:red;
     font-weight:bold;
     font-size:120%;
@@ -277,7 +278,7 @@ color: #f00 ;
 }
 #modal-close, #modal-close2{
     margin: 0 auto;
-    margin-top: 5px; 
+    margin-top: 15px; 
     width: 30px;
     height: 30px;
     text-align: center;
@@ -296,6 +297,34 @@ color: #f00 ;
     background-color: #ffffff;
     font-size: 10px;
     text-align: center;
+}
+
+.profile {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.profile td{
+    width: 30%;
+    border: double 1px;
+    padding: 10px;
+}
+
+.profile th{
+    width: 70%;
+    border: double 1px;
+    padding: 10px;
+}
+
+.tableContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.phonetic {
+    font-size: 10px;
 }
 
 /*スマホ画面の設定↓*/
@@ -386,5 +415,31 @@ color: #f00 ;
     }
     #amazonIcon{
         margin: 5px;
+    }
+
+    #modal-content{
+        width: 75% ;
+        margin: 0 ;
+        padding: 5px 5px ;
+        border: 2px solid #aaa ;
+        background: #fff ;
+        position: fixed ;
+        display: none ;
+        z-index: 2 ;
+    }
+    #modal-content2{
+        width: 75% ;
+        height: 90%;
+        margin: 0 ;
+        padding: 5px 10px ;
+        border: 2px solid #aaa ;
+        background: #fff ;
+        position: fixed ;
+        display: none ;
+        z-index: 2 ;
+    }
+    #modal-content-innar, #modal-content-innar2{
+        margin:0 auto;
+        width: 100%;
     }
 }

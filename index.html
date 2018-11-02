@@ -58,10 +58,13 @@
                 <button class="btn-hamburger js-slideout-toggle"></button>
                 <div id="title">ゆっきーの部屋</div>
                 <!--メイン画像-->
-                <!--HPタイトル-->
+                    <div id="mainContents">
+                        <img src="./src/Di_kJSsVAAAPfze.jpg" class="mainImg">
+                    </div>
+                    <!--HPタイトル-->
 
             </header>
-            <div class="swiper-container">
+            <!-- <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./src/Di_kJSsVAAAPfze.jpg" class="mainImg"></div>
                     <div class="swiper-slide"><img src="./src/11367695-large.jpg" class="mainImg"></div>
@@ -70,7 +73,7 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div>
+            </div> -->
         </main>
 
         <!-- <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
@@ -133,40 +136,19 @@
     <div id="modal-content" style="left: 438px; top: 109px; display: none;">
         <div id="modal-content-innar">
             <p class="red bold"><strong>プロフィール</strong></p>
-            <table>
-                <tr>
-                    <td>名前</td>
-                    <th>澤崎 柚希</th>
-                </tr>
-                <tr>
-                    <td>愛称</td>
-                    <th>ゆっきー<br>ペンギン</th>
-                </tr>
-                <tr>
-                    <td>誕生日</td>
-                    <th>11××年7月16日</th>
-                </tr>
-                <tr>
-                    <td>職業</td>
-                    <th>OL<br>アイドル<br>声優</th>
-                </tr>
-                <tr>
-                    <td>出身</td>
-                    <th>広島</th>
-                </tr>
-                <tr>
-                    <td>現在地</td>
-                    <th>あなたの中</th>
-                </tr>
-                <tr>
-                    <td>趣味</td>
-                    <th>喋る<br>寝る<br>食べる<br>泳ぐ</th>
-                </tr>
-                <tr>
-                    <td>好き</td>
-                    <th>太くて硬いパスタ<br>サカナ<br>カープ<br>イケメン</th>
-                </tr>
-            </table>
+            <div class="tableContainer">
+                <table class="profile">
+                    <tr><td>名前</td><th><span class="phonetic">さわさき 　ゆき</span><br>澤崎　柚希</th></tr>
+                    <tr><td>愛称</td><th>ゆっきー<br>ペンギン</th></tr>
+                    <tr><td>誕生日</td><th>11××年7月16日</th></tr>
+                    <tr><td>職業</td><th>声優<br>アイドル<br>OL</th></tr>
+                    <tr><td>出身</td><th>広島</th></tr>
+                    <tr><td>現在地</td><th>東京</th></tr>
+                    <tr><td>趣味</td><th>喋る<br>歌う<br>踊る<br>演劇<br>ミュージカル鑑賞<br>野球観戦</th></tr>
+                    <tr><td>特技</td><th>とにかく寝る<br>意外と裁縫ができる<br>SEものまね</th></tr>
+                    <tr><td>好き</td><th>イケメン<br>カープ<br>田中ゆかりさん</th></tr>
+                </table>
+            </div>
             <div id="modal-close"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
         </div>
     </div>
