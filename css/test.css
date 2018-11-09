@@ -10,7 +10,21 @@ body {
 
 body,
 .panel {
-  background-color: #ffb6c1;
+  background-image: url('./../src/back.jpeg');
+  position: relative;
+  z-index: 0;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .menu {
@@ -109,7 +123,7 @@ a {
   left: 12px;
   padding-bottom: 12px;
   outline:none;
-  background: url('../src/menu.png') no-repeat center;
+  background: url('../src/menu2.png') no-repeat center;
   width: 50px;
   height: 50px;
 }
@@ -170,7 +184,7 @@ a {
 
   .panel-header {
     margin-top: 40px;
-    width: 455px;
+    width: 500px;
   }
 
   .title {

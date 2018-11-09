@@ -45,7 +45,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGTQP6D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     </div>
-    <div id="main">
+    <div class="main">
         <nav id="menu" class="menu">
             <section class="menu-section">
                 <ul class="menu-section-list">
@@ -57,13 +57,17 @@
                 </ul>
             </section>
         </nav>
-        
+
         <!--パネル-->
         <main id="panel" class="panel">
             <header class="panel-header">
                 <button class="btn-hamburger js-slideout-toggle"></button>
-                <div id="title">ゆっきーの部屋</div>
+                <!-- <div id="title">ゆっきーの部屋</div> -->
+                <div class="titleContainer"><img src="./src/yukkiTitle.png"></div>
                 <!--メイン画像-->
+                    <div id="mainContents">
+                        <img src="./src/Di_kJSsVAAAPfze.jpg" class="mainImg">
+                    </div>
                 <!--HPタイトル-->
 
             </header>
@@ -81,15 +85,13 @@
 
         <!-- <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
 
-
-
-
         <!--グリッドレイアウト-->
         <div class="wrapperGrid">
             <!--カレンダー-->
             <div id="calendar">
                 <div class="subtitle">event schedule</div>
-                <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo"
+
+                <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;color=%232F6309&amp;ctz=Asia%2FTokyo"
                     style="border-width:0" frameborder="0" scrolling="no"></iframe>
                 <!-- <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff6666&amp;src=ld0p23pue8o93votej44es4688%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
             </div>
@@ -100,64 +102,97 @@
                     by yukkyfadeout</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <!--LINE-->
-            <a href="https://stampsensei.com/stamp/31516" id="lineCard" class="SNScard">
-                <div id="lineIcon" class="snsBtn ripple">
-                    <img src="./src/Line.png" class="SNSImg">
-                </div>
-            </a>
-            <!--Twitter-->
-            <a href="https://twitter.com/yukkyfadeout" id="twitterCard" class="SNScard ripple">
-                <div id="twitterIcon" class="snsBtn">
-                    <img src="./src/11367695-large.jpg" class="SNSImg">
-                </div>
-            </a>
-            <!--ショールーム-->
-            <a href="https://www.showroom-live.com/sawazakiyuzuki" id="showroomCard" class="SNScard">
-                <div id="showroomIcon" class="snsBtn ripple">
-                    <img src="./src/1024.png" class="SNSImg">
-                </div>
-            </a>
-            <!--ボイシー-->
-            <a href="https://voicy.jp/channel/475" id="voicyCard" class="SNScard ripple">
-                <div id="voicyIcon" class="snsBtn">
-                    <img src="https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg"
-                        class="SNSImg">
-                </div>
-            </a>
-            <!--amazon-->
-            <a href="https://www.amazon.co.jp/dp/B07CJGYRZP/ref=cm_sw_r_oth_api_FPaXBbH9X6E7T" id="amazonCard" class="SNScard ripple">
-                <div id="amazonIcon" class="snsBtn">
-                    <img src="./src/amazon.png" class="SNSImg">
-                </div>
-            </a>
         </div>
+        <div class="iconContainer"> 
+                <!--LINE-->
+                <a href="https://stampsensei.com/stamp/31516" id="lineCard" class="SNScard">
+                    <div id="lineIcon" class="snsBtn ripple">
+                        <img src="./src/Line.png" class="SNSImg">
+                    </div>
+                </a>
+                <!--Twitter-->
+                <a href="https://twitter.com/yukkyfadeout" id="twitterCard" class="SNScard ripple">
+                    <div id="twitterIcon" class="snsBtn">
+                        <img src="./src/11367695-large.jpg" class="SNSImg">
+                    </div>
+                </a>
+                <!--ショールーム-->
+                <a href="https://www.showroom-live.com/sawazakiyuzuki" id="showroomCard" class="SNScard">
+                    <div id="showroomIcon" class="snsBtn ripple">
+                        <img src="./src/1024.png" class="SNSImg">
+                    </div>
+                </a>
+                <!--ボイシー-->
+                <a href="https://voicy.jp/channel/475" id="voicyCard" class="SNScard ripple">
+                    <div id="voicyIcon" class="snsBtn">
+                        <img src="https://lh3.googleusercontent.com/-iY5BWgDNoyI/W4lv1OaOwWI/AAAAAAAAAFI/6F6tlsLd-SYAXvkUbpt-I-KrmyWg2oUdQCL0BGAYYCw/h512/2018-08-31.jpg"
+                            class="SNSImg">
+                    </div>
+                </a>
+                <!--amazon-->
+                <a href="https://www.amazon.co.jp/dp/B07CJGYRZP/ref=cm_sw_r_oth_api_FPaXBbH9X6E7T" id="amazonCard"
+                    class="SNScard ripple">
+                    <div id="amazonIcon" class="snsBtn">
+                        <img src="./src/amazon.png" class="SNSImg">
+                    </div>
+                </a>
+            </div>
         <div id="footer">Copylight Ⓒ sawasaki yuki All Right Reserved.</div>
     </div>
     <!-- モーダルウィンドウのコンテンツ開始 -->
     <div id="modal-content" style="left: 438px; top: 109px; display: none;">
         <div id="modal-content-innar">
             <p class="red bold"><strong>プロフィール</strong></p>
-            <table>
-                <tr><td>名前</td><th>澤崎 柚希</th></tr>
-                <tr><td>愛称</td><th>ゆっきー<br>ペンギン</th></tr>
-                <tr><td>誕生日</td><th>11××年7月16日</th></tr>
-                <tr><td>職業</td><th>OL<br>アイドル<br>声優</th></tr>
-                <tr><td>出身</td><th>広島</th></tr>
-                <tr><td>現在地</td><th>あなたの中</th></tr>
-                <tr><td>趣味</td><th>喋る<br>寝る<br>食べる<br>泳ぐ</th></tr>
-                <tr><td>好き</td><th>太くて硬いパスタ<br>サカナ<br>カープ<br>イケメン</th></tr>
-            </table>
+            <div class="tableContainer">
+                <table class="profile">
+                    <tr>
+                        <td>名前</td>
+                        <th><span class="phonetic">さわさき 　ゆき</span><br>澤崎　柚希</th>
+                    </tr>
+                    <tr>
+                        <td>愛称</td>
+                        <th>ゆっきー/ペンギン</th>
+                    </tr>
+                    <tr>
+                        <td>誕生日</td>
+                        <th>11××年7月16日</th>
+                    </tr>
+                    <tr>
+                        <td>職業</td>
+                        <th>声優/アイドル/OL</th>
+                    </tr>
+                    <tr>
+                        <td>出身</td>
+                        <th>広島</th>
+                    </tr>
+                    <tr>
+                        <td>現在地</td>
+                        <th>東京</th>
+                    </tr>
+                    <tr>
+                        <td>趣味</td>
+                        <th>喋る/歌う/踊る/演劇<br>ミュージカル鑑賞/野球観戦</th>
+                    </tr>
+                    <tr>
+                        <td>特技</td>
+                        <th>とにかく寝る/意外と裁縫ができる<br>SEものまね</th>
+                    </tr>
+                    <tr>
+                        <td>好き</td>
+                        <th>イケメン/カープ/田中ゆかりさん</th>
+                    </tr>
+                </table>
+            </div>
             <div id="modal-close"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
         </div>
     </div>
     <!-- モーダルウィンドウのコンテンツ終了 -->
     <!-- モーダルウィンドウのコンテンツ開始 -->
-    <div id="modal-content2" style="left: 438px; top: 109px; display: none;">
+    <div id="modal-content2" style="left: 260px; top: 109px; display: none;">
         <div id="modal-content-innar2">
             <p class="red bold"><strong>スケジュール</strong></p>
-            <iframe src="https://calendar.google.com/calendar/embed?src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&ctz=Asia%2FTokyo"
-                style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=8hlt931isiei0sg0gsh0n5k5l0%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Asia%2FTokyo"
+                style="border-width:0" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
             <div id="modal-close2"><a class="button-link"><img src="./src/細いバツのアイコン2.jpeg" id="closeIcon"></a></div>
         </div>
     </div>
